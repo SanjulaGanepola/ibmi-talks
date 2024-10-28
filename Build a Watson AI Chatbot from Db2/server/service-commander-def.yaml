@@ -1,0 +1,6 @@
+name: ConnectMe Server
+dir: .
+start_cmd: npm run start
+check_alive: 3001
+environment_vars:
+- PATH=/QOpenSys/pkgs/bin:/QOpenSys/usr/bin:/usr/ccs/bin:/QOpenSys/usr/bin/X11:/usr/sbin:.:/usr/bin
