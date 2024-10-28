@@ -12,13 +12,13 @@ This simple ConnectMe express server connects to Db2i and allows retrival and up
 
     ```sh
     ## Start server
-    sc start mapepire.yaml
+    sc start connect-me.yaml
 
     ## Stop server
-    sc stop mapepire.yaml
+    sc stop connect-me.yaml
     
     ## Check server status
-    sc check mapepire.yaml
+    sc check connect-me.yaml
     ```
 
 4. Test the `GET` endpoint (`/accounts`) by opening the following link in your browser (make sure to replace `<host>` with your IBM i host name):
