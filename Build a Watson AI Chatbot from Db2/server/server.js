@@ -1,3 +1,4 @@
+const cors = require('cors')
 const dotenv = require('dotenv');
 const express = require('express');
 const { SQLJob } = require('@ibm/mapepire-js');
@@ -5,7 +6,7 @@ const { SQLJob } = require('@ibm/mapepire-js');
 dotenv.config();
 
 const app = express();
-app.use(express.json());
+app.use(cors())
 
 async function createSQLJob() {
     const job = new SQLJob();
