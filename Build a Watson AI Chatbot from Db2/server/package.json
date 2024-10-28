@@ -4,10 +4,14 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "swagger": "http-server --cors"
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
   "dependencies": {
     "@ibm/mapepire-js": "^0.3.0",
     "cors": "^2.8.5",

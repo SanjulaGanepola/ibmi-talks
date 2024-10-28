@@ -16,9 +16,9 @@ tags:
 paths:
   /accounts:
     get:
+      summary: Get an account.
       tags:
         - Account Services
-      summary: Get an account.
       parameters:
         - name: EMAIL_ADDRESS
           description: The email address associated with the account.
@@ -57,6 +57,8 @@ paths:
                     type: string
     put:
       summary: Update an account.
+      tags:
+        - Account Services
       requestBody:
         required: true
         content:
