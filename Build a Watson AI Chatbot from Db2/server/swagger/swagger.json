@@ -1,0 +1,147 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "ConnectMe Server API",
+    "description": "API for managing ConnectMe accounts.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://{host}:3001",
+      "description": "IBM i",
+      "variables": {
+        "host": {
+          "default": "localhost",
+          "description": "Host name of IBM i"
+        }
+      }
+    }
+  ],
+  "tags": [
+    {
+      "name": "Account Services",
+      "description": "Account Services provide APIs to manage accounts."
+    }
+  ],
+  "paths": {
+    "/accounts": {
+      "get": {
+        "summary": "Get an account.",
+        "tags": [
+          "Account Services"
+        ],
+        "parameters": [
+          {
+            "name": "EMAIL_ADDRESS",
+            "description": "The email address associated with the account.",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved account.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "EMAIL_ADDRESS": {
+                      "type": "string"
+                    },
+                    "NAME": {
+                      "type": "string"
+                    },
+                    "ACCOUNT_NUMBER": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed to retrieve account.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update an account.",
+        "tags": [
+          "Account Services"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "EMAIL_ADDRESS": {
+                    "type": "string"
+                  },
+                  "NAME": {
+                    "type": "string"
+                  },
+                  "ACCOUNT_NUMBER": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "EMAIL_ADDRESS"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully updated account.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed to update account.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
