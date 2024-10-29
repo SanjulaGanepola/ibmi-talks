@@ -56,7 +56,7 @@
                       "type": "string"
                     },
                     "ACCOUNT_NUMBER": {
-                      "type": "string"
+                      "type": "number"
                     }
                   }
                 }
@@ -99,7 +99,7 @@
                     "type": "string"
                   },
                   "ACCOUNT_NUMBER": {
-                    "type": "string"
+                    "type": "number"
                   }
                 },
                 "required": [
