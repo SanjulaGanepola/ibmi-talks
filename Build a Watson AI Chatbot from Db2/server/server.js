@@ -6,7 +6,7 @@ const { SQLJob } = require('@ibm/mapepire-js');
 dotenv.config();
 
 const app = express();
-app.use(cors())
+app.use(cors());
 
 async function createSQLJob() {
     const job = new SQLJob();
@@ -23,7 +23,7 @@ async function createSQLJob() {
 
 app.get('/accounts', async (req, res) => {
     // Extract and verify required query parameters
-    const { EMAIL_ADDRESS, ACCOUNT_NUMBER } = req.query;
+    const { EMAIL_ADDRESS } = req.query;
 
     let job;
     try {
@@ -31,8 +31,8 @@ app.get('/accounts', async (req, res) => {
         job = await createSQLJob();
 
         // Execute query
-        const query = `SELECT * FROM CONNECTME.ACCOUNT WHERE EMAIL_ADDRESS = ? AND ACCOUNT_NUMBER = ?`;
-        const parameters = [EMAIL_ADDRESS, ACCOUNT_NUMBER];
+        const query = `SELECT * FROM CONNECTME.ACCOUNT WHERE EMAIL_ADDRESS = ?`;
+        const parameters = [EMAIL_ADDRESS];
         const result = await job.execute(query, { parameters: parameters });
 
         // Check result
@@ -62,7 +62,7 @@ app.put('/accounts', async (req, res) => {
             `UPDATE CONNECTME.ACCOUNT SET ACCOUNT_NUMBER = ? WHERE EMAIL_ADDRESS = ?`;
         const parameters = NAME ?
             [NAME, EMAIL_ADDRESS] :
-            [NAME, ACCOUNT_NUMBER];
+            [ACCOUNT_NUMBER, EMAIL_ADDRESS];
         const result = await job.execute(query, { parameters: parameters });
 
         // Check result
