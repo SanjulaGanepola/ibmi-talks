@@ -7,6 +7,17 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
+app.use(express.json());
+app.use((req, res, next) => {
+    console.log({
+        method: req.method,
+        url: req.originalUrl,
+        query: req.query,
+        body: req.body,
+        status: res.statusCode
+    });
+    next();
+});
 
 async function createSQLJob() {
     const job = new SQLJob();
@@ -61,17 +72,18 @@ app.put('/accounts', async (req, res) => {
     // Extract and verify required body parameters
     const { EMAIL_ADDRESS, NAME, ACCOUNT_NUMBER } = req.body;
 
+    let job;
     try {
         // Create SQL job
-        const job = await createSQLJob();
+        job = await createSQLJob();
 
         // Execute query
-        const query = `UPDATE CONNECTME.ACCOUNT SET NAME = ? AND SET ACCOUNT_NUMBER = ? WHERE EMAIL_ADDRESS = ?`;
+        const query = `UPDATE CONNECTME.ACCOUNT SET NAME = ?, ACCOUNT_NUMBER = ? WHERE EMAIL_ADDRESS = ?`;
         const parameters = [NAME, ACCOUNT_NUMBER, EMAIL_ADDRESS];
         const result = await job.execute(query, { parameters: parameters });
 
         // Check result
-        if (result.success) {
+        if (result.success && result.update_count === 1) {
             res.json({
                 MESSAGE: `Successfully updated account`
             });
