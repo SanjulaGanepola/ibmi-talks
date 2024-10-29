@@ -106,7 +106,9 @@
                   }
                 },
                 "required": [
-                  "EMAIL_ADDRESS"
+                  "EMAIL_ADDRESS",
+                  "NAME",
+                  "ACCOUNT_NUMBER"
                 ]
               }
             }

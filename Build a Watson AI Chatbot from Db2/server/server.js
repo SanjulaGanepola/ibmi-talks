@@ -66,12 +66,8 @@ app.put('/accounts', async (req, res) => {
         const job = await createSQLJob();
 
         // Execute query
-        const query = NAME ?
-            `UPDATE CONNECTME.ACCOUNT SET NAME = ? WHERE EMAIL_ADDRESS = ?` :
-            `UPDATE CONNECTME.ACCOUNT SET ACCOUNT_NUMBER = ? WHERE EMAIL_ADDRESS = ?`;
-        const parameters = NAME ?
-            [NAME, EMAIL_ADDRESS] :
-            [ACCOUNT_NUMBER, EMAIL_ADDRESS];
+        const query = `UPDATE CONNECTME.ACCOUNT SET NAME = ? AND SET ACCOUNT_NUMBER = ? WHERE EMAIL_ADDRESS = ?`;
+        const parameters = [NAME, ACCOUNT_NUMBER, EMAIL_ADDRESS];
         const result = await job.execute(query, { parameters: parameters });
 
         // Check result
