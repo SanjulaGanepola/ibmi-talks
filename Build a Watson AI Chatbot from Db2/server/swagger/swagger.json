@@ -57,6 +57,9 @@
                     },
                     "ACCOUNT_NUMBER": {
                       "type": "number"
+                    },
+                    "MESSAGE": {
+                      "type": "string"
                     }
                   }
                 }
@@ -70,7 +73,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "message": {
+                    "MESSAGE": {
                       "type": "string"
                     }
                   }
@@ -117,7 +120,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "message": {
+                    "MESSAGE": {
                       "type": "string"
                     }
                   }
@@ -132,7 +135,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "message": {
+                    "MESSAGE": {
                       "type": "string"
                     }
                   }

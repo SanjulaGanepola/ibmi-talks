@@ -37,12 +37,21 @@ app.get('/accounts', async (req, res) => {
 
         // Check result
         if (result.success && result.data.length > 0) {
-            res.json(result.data[0]);
+            res.json({
+                EMAIL_ADDRESS: result.data[0].EMAIL_ADDRESS,
+                NAME: result.data[0].NAME,
+                ACCOUNT_NUMBER: result.data[0].ACCOUNT_NUMBER,
+                MESSAGE: 'Successfully retrieved account.'
+            });
         } else {
-            res.status(500).json({ message: `Failed to retrieve account with email address ${EMAIL_ADDRESS}.` });
+            res.status(500).json({
+                MESSAGE: `Failed to retrieve account with email address ${EMAIL_ADDRESS}.`
+            });
         }
     } catch (error) {
-        res.status(500).json({ message: `Internal server error.` });
+        res.status(500).json({
+            MESSAGE: `Internal server error.`
+        });
     } finally {
         await job.close();
     }
@@ -67,12 +76,18 @@ app.put('/accounts', async (req, res) => {
 
         // Check result
         if (result.success) {
-            res.json({ message: `Successfully updated account` });
+            res.json({
+                MESSAGE: `Successfully updated account`
+            });
         } else {
-            res.status(500).json({ message: `Failed to update account with email address ${EMAIL_ADDRESS}.` });
+            res.status(500).json({
+                MESSAGE: `Failed to update account with email address ${EMAIL_ADDRESS}.`
+            });
         }
     } catch (error) {
-        res.status(500).json({ message: `Internal server error.` });
+        res.status(500).json({
+            MESSAGE: `Internal server error.`
+        });
     } finally {
         await job.close();
     }
