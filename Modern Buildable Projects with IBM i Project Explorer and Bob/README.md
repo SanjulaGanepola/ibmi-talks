@@ -2,6 +2,9 @@
 
 Modern development on the IBM i uses stream files which allows the use of the modern application development technology. Learn how to migrate your source from the QSYS file system and manage it with Git, develop it with VS Code extensions in projects that understand how to build themselves. This will introduce you to the IBM i Project Explorer and BOB (Better Object Builder).
 
+## Speakers
+Sanjula Ganepola and Edmund Reinhardt
+
 ## Session Format
 Standard 60 Minute Session
 
