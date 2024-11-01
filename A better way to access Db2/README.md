@@ -1,1 +1,0 @@
-# A better way to access Db2
