@@ -24,5 +24,5 @@ This simple ConnectMe express server connects to Db2i and allows retrival and up
 4. Test the `GET` endpoint (`/accounts`) by opening the following link in your browser (make sure to replace `<host>` with your IBM i host name):
 
     ```
-    http://<host>:3001/accounts?EMAIL_ADDRESS=john.doe@example.com&ACCOUNT_NUMBER=A123
+    http://<host>:3001/accounts?EMAIL_ADDRESS=john.doe@example.com&ACCOUNT_NUMBER=1111
     ```
