@@ -18,9 +18,9 @@ Developer
 
 ## Session Level
 Intermediate
- 
-## Conference
-NAViGATE Toronto - November 4 – 6, 2024, Westin Harbour Castle
 
 ## Session Topics
 DevOps, Programmer Tools
+ 
+## Conference
+* NAViGATE Toronto (November 4 - 6, 2024)

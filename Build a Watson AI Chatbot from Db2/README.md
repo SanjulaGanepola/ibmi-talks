@@ -8,14 +8,19 @@ Sanjula Ganepola
 ## Session Format
 Standard 60 Minute Session
 
+## Learning Objectives
+* Learn how WatsonX assistant works and understand relevant terminology
+* Learn how to build you first chatbot
+* Learn how to integrate Db2 to retrieve and update data
+
 ## Audience
 Developer
 
 ## Session Level
 Beginner
- 
-## Conference
-NAViGATE Toronto - November 4 – 6, 2024, Westin Harbour Castle
 
 ## Session Topics
 Artificial Intelligence (AI)
+ 
+## Conference
+* NAViGATE Toronto (November 4 - 6, 2024)

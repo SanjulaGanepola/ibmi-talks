@@ -20,8 +20,8 @@ Developer
 ## Session Level
 Beginner
 
-## Conference
-NAViGATE Toronto - November 4 – 6, 2024, Westin Harbour Castle
-
 ## Session Topics
 Programmer Tools
+
+## Conference
+NAViGATE Toronto (November 4 - 6, 2024)
