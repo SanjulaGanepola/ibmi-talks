@@ -6,3 +6,7 @@ If you found these talks helpful, please consider [starring this repo](https://g
 * [Automating Builds in Git on IBM i](./Automating%20Builds%20in%20Git%20on%20IBM%20i/Automating-Builds-in-Git-on-IBM-i.pdf)
 * [Build a Watson AI Chatbot from Db2](./Build%20a%20Watson%20AI%20Chatbot%20from%20Db2/Build-a-Watson-AI-Chatbot-from-Db2.pdf)
 * [Forget ODBC! Here’s a New Db2 Connector](./Forget%20ODBC!%20Here’s%20a%20New%20Db2%20Connector/Forget-ODBC!-Here’s-a-New-Db2-Connector.pdf)
+* OSS Tools For System Management
+* Never Miss A System Event with Manzan
+* Git Concepts I Wish I Knew Years Ago
+* VS Code Features You Didn’t Know Existed
