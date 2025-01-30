@@ -19,7 +19,7 @@ Standard 60 Minute Session
 System Administrator
 
 ## Session Level
-Beginner
+Suitable for All
 
 ## Session Topics
 Systems Management

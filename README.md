@@ -10,3 +10,4 @@ If you found these talks helpful, please consider [starring this repo](https://g
 * Never Miss A System Event with Manzan
 * Git Concepts I Wish I Knew Years Ago
 * VS Code Features You Didn’t Know Existed
+* IBM i Unit Testing Now in VS Code!
