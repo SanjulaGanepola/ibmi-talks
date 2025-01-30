@@ -18,7 +18,7 @@ Short 20 Minute Session
 Developer
 
 ## Session Level
-Beginner
+Suitable for All
 
 ## Session Topics
 Program Testing
