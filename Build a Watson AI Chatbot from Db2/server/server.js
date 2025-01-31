@@ -26,7 +26,7 @@ async function createSQLJob() {
         user: process.env.user,
         password: process.env.password,
         port: process.env.port,
-        ignoreUnauthorized: true
+        rejectUnauthorized: false
     });
 
     return job;
