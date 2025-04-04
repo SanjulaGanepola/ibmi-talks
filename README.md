@@ -7,7 +7,7 @@ If you found these talks helpful, please consider [starring this repo](https://g
 * [Build a Watson AI Chatbot from Db2](./Build%20a%20Watson%20AI%20Chatbot%20from%20Db2/Build-a-Watson-AI-Chatbot-from-Db2.pdf)
 * [Forget ODBC! Here’s a New Db2 Connector](./Forget%20ODBC!%20Here’s%20a%20New%20Db2%20Connector/Forget-ODBC!-Here’s-a-New-Db2-Connector.pdf)
 * [OSS Tools For System Management](./OSS%20Tools%20For%20System%20Management/OSS-Tools-For-System-Management.pdf)
-* Never Miss A System Event with Manzan
-* Git Concepts I Wish I Knew Years Ago
+* [Git Concepts I Wish I Knew Years Ago](./Git%20Concepts%20I%20Wish%20I%20Knew%20Years%20Ago/Git%20Concepts%20I%20Wish%20I%20Knew%20Years%20Ago.pdf)
 * VS Code Features You Didn’t Know Existed
 * IBM i Unit Testing Now in VS Code!
+* Never Miss A System Event with Manzan
