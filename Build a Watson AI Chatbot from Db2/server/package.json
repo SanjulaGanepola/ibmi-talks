@@ -13,7 +13,7 @@
     "http-server": "^14.1.1"
   },
   "dependencies": {
-    "@ibm/mapepire-js": "^0.4.0",
+    "@ibm/mapepire-js": "^0.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1"
