@@ -22,6 +22,3 @@ Beginner
 
 ## Session Topics
 Systems Management
-
-## Conference
-* LUG (February 3 - 6, 2025)

@@ -21,6 +21,3 @@ Intermediate
 
 ## Session Topics
 Programmer Tools
- 
-## Conference
-* POWERUp 2025 Anaheim (May 19 - 22, 2025)

@@ -22,7 +22,3 @@ Beginner
 
 ## Session Topics
 Artificial Intelligence (AI)
- 
-## Conference
-* NAViGATE Toronto (November 4 - 6, 2024)
-* LUG (February 3 - 6, 2025)

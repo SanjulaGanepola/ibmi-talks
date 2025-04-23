@@ -21,6 +21,3 @@ Intermediate
 
 ## Session Topics
 DevOps, Programmer Tools
- 
-## Conference
-* NAViGATE Toronto (November 4 - 6, 2024)

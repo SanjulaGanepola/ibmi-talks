@@ -23,6 +23,3 @@ Suitable for All
 
 ## Session Topics
 Systems Management
-
-## Conference
-* POWERUp 2025 Anaheim (May 19 - 22, 2025)

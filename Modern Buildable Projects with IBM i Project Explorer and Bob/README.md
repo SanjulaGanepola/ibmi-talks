@@ -22,6 +22,3 @@ Beginner
 
 ## Session Topics
 Programmer Tools
-
-## Conference
-NAViGATE Toronto (November 4 - 6, 2024)
