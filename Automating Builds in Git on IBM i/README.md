@@ -20,4 +20,5 @@ Developer
 Intermediate
 
 ## Session Topics
-DevOps, Programmer Tools
+* DevOps
+* Programmer Tools

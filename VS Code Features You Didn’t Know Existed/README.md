@@ -20,4 +20,4 @@ Developer
 Suitable for All
 
 ## Session Topics
-Programmer Tools
+* Programmer Tools

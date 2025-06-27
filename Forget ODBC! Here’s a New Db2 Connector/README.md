@@ -21,4 +21,4 @@ Developer
 Beginner
 
 ## Session Topics
-Database
+* Database

@@ -20,4 +20,4 @@ Developer
 Intermediate
 
 ## Session Topics
-Programmer Tools
+* Programmer Tools

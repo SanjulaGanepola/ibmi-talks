@@ -21,4 +21,4 @@ Developer
 Beginner
 
 ## Session Topics
-Programmer Tools
+* Programmer Tools

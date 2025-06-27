@@ -21,4 +21,4 @@ Developer
 Suitable for All
 
 ## Session Topics
-Program Testing
+* Program Testing

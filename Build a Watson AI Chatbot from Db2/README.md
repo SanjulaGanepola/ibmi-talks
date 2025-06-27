@@ -21,4 +21,4 @@ Developer
 Beginner
 
 ## Session Topics
-Artificial Intelligence (AI)
+* Artificial Intelligence (AI)
