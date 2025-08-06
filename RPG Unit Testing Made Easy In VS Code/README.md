@@ -1,6 +1,6 @@
 # RPG Unit Testing Made Easy In VS Code
 
-Join us for an in-depth look at the new IBM i Testing extension for VS Code. In this session, we will demonstrate how you can not only write and execute RPGUnit test suites directly within the editor, but also generate test stubs to simplify the process of getting started. We will cover the basics of the RPGUnit test framework, guide you through the installation process, showcase how easy it is to write a test suite, and demonstrate how to execute tests with code coverage. If you are looking to adopt new and modern tooling, come check out this exciting addition to the IBM i development ecosystem in VS Code.
+Join us for an in-depth look at the new IBM i Testing VS Code extension and IBM i Testing CLI. In this session, we will demonstrate how you can now write and execute RPGUnit test suites (supporting both RPG and COBOL) directly within the editor using local files or source members. We will cover the basics of the RPGUnit test framework, showcase how to generate test stubs that make it easy to get started, demonstrate how to execute tests with code coverage, and even run tests in a CI/CD pipeline with GitHub Actions. If you are looking to adopt new and modern tooling, come check out this exciting addition to the IBM i development ecosystem in VS Code.
 
 ## Speakers
 Sanjula Ganepola
