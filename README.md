@@ -17,6 +17,7 @@ If you found these talks helpful, please consider [starring this repo](https://g
 * [Forget ODBC! Here’s a New Db2 Connector](./Forget%20ODBC!%20Here’s%20a%20New%20Db2%20Connector/)
 * [Build a Watson AI Chatbot from Db2](./Build%20a%20Watson%20AI%20Chatbot%20from%20Db2/)
 
-## Work In Progress
+## Future Ideas
 * [IBM watsonx Code Assistant for i - See it in Action](./IBM%20watsonx%20Code%20Assistant%20for%20i%20-%20See%20It%20in%20Action/)
 * [Node.js In Action - Intro to Mapepire and Building an MCP Server](./Node.js%20In%20Action%20-%20Intro%20to%20Mapepire%20and%20Building%20an%20MCP%20Server/)
+* [Building VS Code Extensions and Contributing to Code for IBM i](./Building%20VS%20Code%20Extensions%20and%20Contributing%20to%20Code%20for%20IBM%20i/)
