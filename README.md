@@ -3,7 +3,6 @@
 If you found these talks helpful, please consider [starring this repo](https://github.com/SanjulaGanepola/ibmi-talks) 🌟!
 
 ## VS Code, Git, Code for IBM i, and More
-* [Building VS Code Extensions and Contributing to Code for IBM i](./Building%20VS%20Code%20Extensions%20and%20Contributing%20to%20Code%20for%20IBM%20i/)
 * [VS Code Features You Didn’t Know Existed](./VS%20Code%20Features%20You%20Didn’t%20Know%20Existed/)
 * [RPG Unit Testing Made Easy In VS Code](./RPG%20Unit%20Testing%20Made%20Easy%20In%20VS%20Code/)
     * [IBM i Unit Testing Now in VS Code!](./IBM%20i%20Unit%20Testing%20Now%20in%20VS%20Code!/) ***(OLD VERSION)***
