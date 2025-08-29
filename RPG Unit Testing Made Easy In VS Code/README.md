@@ -11,7 +11,7 @@ Standard 60 Minute Session
 ## Learning Objectives
 * Learn about the new IBM i Testing extension for VS Code
 * Learn about the RPGUnit test framework
-* Learn how to execute RPG and COBOL tests and view code coverage
+* Learn how to execute RPG tests and view code coverage
 * Learn how to integrate unit testing into your development lifecycle
 
 ## Audience
