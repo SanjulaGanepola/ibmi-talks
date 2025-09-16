@@ -1,0 +1,4 @@
+name: ConnectMe Server
+dir: .
+start_cmd: npm run start
+check_alive: 3001

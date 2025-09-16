@@ -1,0 +1,27 @@
+{
+  "name": "connectme-mcp-server",
+  "version": "1.0.0",
+  "description": "ConnectMe MCP Server",
+  "bin": {
+    "connectme-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "inspector": "npx @modelcontextprotocol/inspector node ./dist/index.js -e IBMI_HOST=HOST -e IBMI_PORT=8076 -e IBMI_USER=USER -e IBMI_PASSWORD=PASSWORD",
+    "webpack:dev": "webpack --mode none --config ./webpack.config.js",
+    "webpack": "webpack --mode production --config ./webpack.config.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "@ibm/mapepire-js": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.8.2",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  }
+}

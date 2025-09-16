@@ -1,0 +1,163 @@
+{
+  "name": "demo-extension",
+  "displayName": "Demo Extension",
+  "description": "Demo extension for COMMON Navigate",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "notes",
+          "name": "Notes",
+          "icon": "$(notebook)"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "demo-extension.helloWorld",
+        "title": "Hello World",
+        "category": "Demo Extension"
+      },
+      {
+        "command": "demo-extension.getLineCount",
+        "title": "Get Line Count",
+        "category": "Demo Extension"
+      },
+      {
+        "command": "demo-extension.getUserInformation",
+        "title": "Get User Information",
+        "category": "Demo Extension"
+      },
+      {
+        "command": "demo-extension.runTerminalCommands",
+        "title": "Run Terminal Commands",
+        "category": "Demo Extension"
+      },
+      {
+        "command": "demo-extension.refreshNotes",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "demo-extension.addFolder",
+        "title": "Add Folder",
+        "icon": "$(add)"
+      },
+      {
+        "command": "demo-extension.addNote",
+        "title": "Add Note",
+        "icon": "$(add)"
+      },
+      {
+        "command": "demo-extension.deleteFolder",
+        "title": "Delete Folder",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "demo-extension.deleteNote",
+        "title": "Delete Note",
+        "icon": "$(trash)"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "demo-extension.refreshNotes",
+          "when": "never"
+        },
+        {
+          "command": "demo-extension.addFolder",
+          "when": "never"
+        },
+        {
+          "command": "demo-extension.addNote",
+          "when": "never"
+        },
+        {
+          "command": "demo-extension.deleteFolder",
+          "when": "never"
+        },
+        {
+          "command": "demo-extension.deleteNote",
+          "when": "never"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "demo-extension.addFolder",
+          "when": "view == notes",
+          "group": "navigation@0"
+        },
+        {
+          "command": "demo-extension.refreshNotes",
+          "when": "view == notes",
+          "group": "navigation@1"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "demo-extension.addNote",
+          "when": "view == notes && viewItem =~ /^demo-extension.folder.*/",
+          "group": "inline@0"
+        },
+        {
+          "command": "demo-extension.deleteFolder",
+          "when": "view == notes && viewItem =~ /^demo-extension.folder.*/",
+          "group": "inline@1"
+        },
+        {
+          "command": "demo-extension.deleteNote",
+          "when": "view == notes && viewItem =~ /^demo-extension.note.*/",
+          "group": "inline@0"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Demo Extension",
+      "properties": {
+        "demo-extension.clearOutputChannelOnChange": {
+          "type": "boolean",
+          "default": false,
+          "description": "Clear the output channel before logging the next file change."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.103.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "typescript": "^5.9.2",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
